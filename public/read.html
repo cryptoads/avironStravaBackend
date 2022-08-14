@@ -103,7 +103,7 @@
 
                 fetch("https://www.strava.com/api/v3/activities?name=Row&sport_type=Rowing&start_date_local="+row._row.data.createTime.toString()+"&elapsed_time="+row._row.data.timeInSeconds.toString()+"&trainer=1&distance="+row._row.data.meters, requestOptions)
                   .then(response => response.text())
-                  .then(result => console.log(result))
+                  .then(result => {alert('activity uploaded'), console.log(result)})
                   .catch(error => console.log('error', error));
 
                }
