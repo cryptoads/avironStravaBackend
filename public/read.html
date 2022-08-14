@@ -39,7 +39,7 @@
     const fileInput = document.getElementById('file')
     const submitFile = document.getElementById('submitFile')
     document.getElementById("myButton").onclick = function () {
-            location.href = 'https://www.strava.com/oauth/authorize?client_id=91623&response_type=code&redirect_uri=http://localhost:3000/exchange_token&approval_prompt=force&scope=read_all,activity:read,activity:write'; 
+            location.href = 'https://www.strava.com/oauth/authorize?client_id=91623&response_type=code&redirect_uri=https://avironstravaconnector.herokuapp.com/exchange_token&approval_prompt=force&scope=read_all,activity:read,activity:write'; 
         };
     
     let file = null
